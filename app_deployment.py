@@ -124,3 +124,6 @@ else:
 st.markdown("---")
 st.caption("Powered by Streamlit • Employee Attrition Analysis © 2025")
 
+
+
+
