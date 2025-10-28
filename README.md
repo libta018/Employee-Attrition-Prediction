@@ -49,11 +49,9 @@ The trained **Random Forest model** processes these inputs and outputs the **att
 ---
 
 ## 📸 Screenshots  
+<img width="1205" height="747" alt="Screenshot 2025-10-28 131135" src="https://github.com/user-attachments/assets/6c0654d0-3997-4550-9719-a36eb4156e17" />
+<img width="1117" height="707" alt="Screenshot 2025-10-28 131204" src="https://github.com/user-attachments/assets/6f65b87d-dad4-4622-8dff-ae2c93b9832a" />
 
-![Dashboard Screenshot 1](<img width="1205" height="747" alt="Screenshot 2025-10-28 131135" src="https://github.com/user-attachments/assets/0846a918-c425-43a2-89ff-bc03ce5f0256" />
-)  
-![Dashboard Screenshot 2](<img width="1117" height="707" alt="Screenshot 2025-10-28 131204" src="https://github.com/user-attachments/assets/df8d26fc-6429-4578-9670-d2df44d1ae35" />
-)  
 
 ---
 
