@@ -1,23 +1,17 @@
 👥 Employee Attrition Predictor
-
 Empower your HR team with real-time attrition risk insights using this easy-to-use Machine Learning tool.
 Built with Python, scikit-learn, and Streamlit. Instantly predicts employee attrition risk—ready for business use, analytics, or academic demos.
 
 🚀 Features
-One-click Attrition Risk Prediction:
-Modern Streamlit dashboard for fast insights.
+One-click Attrition Risk Prediction: Modern Streamlit dashboard for fast insights.
 
-Robust Machine Learning Pipeline:
-End-to-end workflow using Random Forest, SVM & Logistic Regression.
+Robust Machine Learning Pipeline: End-to-end workflow using Random Forest, SVM & Logistic Regression.
 
-Business-friendly Insights:
-Interprets risk factors and provides actionable retention advice.
+Business-friendly Insights: Interprets risk factors and provides actionable retention advice.
 
-Seamless Customization:
-Easily retrain or tweak model for your company’s data.
+Seamless Customization: Easily retrain or tweak model for your company’s data.
 
-Ready for Deployment:
-All dependencies, scripts, and guides included.
+Ready for Deployment: All dependencies, scripts, and guides included.
 
 🗂️ Key Files
 File                        |  Description                              
@@ -45,7 +39,6 @@ pip install -r requirements.txt
 Train your own model 
 bash
 python Model_Training.py
-# Optionally, tweak models in Model_Selection.py
 
 Launch the Streamlit dashboard
 bash
