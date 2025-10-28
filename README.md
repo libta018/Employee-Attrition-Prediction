@@ -1,121 +1,109 @@
 👥 Employee Attrition Predictor
-Empower your HR team with real-time attrition risk insights using this easy-to-use Machine Learning tool.
-Built with Python, scikit-learn, and Streamlit. Instantly predicts employee attrition risk—ready for business use, analytics, or academic demos.
 
-🚀 Features
-One-click Attrition Risk Prediction: Modern Streamlit dashboard for fast insights.
+Empower your HR team with real-time attrition risk insights using this easy-to-use Machine Learning web app.
+Built with Python, Scikit-learn, and Streamlit, this tool instantly predicts employee attrition risk — perfect for business use, analytics, or academic demos.
 
-Robust Machine Learning Pipeline: End-to-end workflow using Random Forest, SVM & Logistic Regression.
+🚀 Live Demo
+🔗 Try the App Here
 
-Business-friendly Insights: Interprets risk factors and provides actionable retention advice.
+📊 Features
+✔️ One-click Attrition Risk Prediction via Streamlit dashboard
+✔️ End-to-end ML pipeline using Random Forest, SVM & Logistic Regression
+✔️ Business-friendly insights with actionable retention advice
+✔️ Easily customizable — retrain with your company’s HR data
+✔️ Ready for deployment — all scripts, dependencies & runtime included
 
-Seamless Customization: Easily retrain or tweak model for your company’s data.
+🛠️ Tech Stack
+Python 3.9+
+Streamlit – Web App Framework
+Scikit-Learn – Machine Learning
+Pandas & NumPy – Data Processing
+Joblib – Model Serialization
+Matplotlib & Seaborn – Visualization
 
-Ready for Deployment: All dependencies, scripts, and guides included.
+⚙️ How It Works
+The app predicts whether an employee is likely to leave based on various HR parameters such as:
 
-🗂️ Key Files
-File                        |  Description                              
-----------------------------+-------------------------------------------
-Employee.csv                |  Sample employee HR dataset               
-Model_Training.py           |  Script for feature engineering & training
-Model_Selection.py          |  Hyperparameter/model selection workflow  
-app.py / app_deployment.py  |  Streamlit web dashboard                  
-employee_model.pkl          |  Trained Random Forest attrition model    
-feature_names.pkl           |  Required feature columns for prediction  
-requirements.txt            |  Python dependencies                      
-runtime.txt                 |  Python runtime version spec              
+Age, Gender, Education, City, Payment Tier
+Experience (Years in Company), Benched Status, etc.
+
+The trained Random Forest model processes these inputs and outputs the attrition risk score along with data-driven retention advice.
+
+📸 Screenshots
+<img width="1205" height="747" alt="Screenshot 2025-10-28 131135" src="https://github.com/user-attachments/assets/e7e0b56d-9fd9-46f6-be93-d764f054a2d2" />
+<img width="1117" height="707" alt="Screenshot 2025-10-28 131204" src="https://github.com/user-attachments/assets/942f6839-5b65-4c3d-b3c4-84c3e7f6723e" />
+
+📂 Project Structure
+Employee-Attrition-Prediction/
+│-- Employee.csv             # Sample HR dataset  
+│-- Model_Training.py        # Script for feature engineering & training  
+│-- Model_Selection.py       # Model comparison & evaluation workflow  
+│-- app.py / app_deployment.py  # Streamlit web app  
+│-- employee_model.pkl       # Trained Random Forest model  
+│-- feature_names.pkl        # Feature names for prediction  
+│-- requirements.txt         # Dependencies  
+│-- runtime.txt              # Python runtime version  
+│-- README.md                # Documentation  
+│-- Screenshots/             # Dashboard preview images  
+
+📋 Requirements
+streamlit>=1.26.0  
+pandas>=2.1.0  
+numpy>=1.26.0  
+scikit-learn>=1.3.0  
+matplotlib>=3.8.0  
+seaborn>=0.13.0  
+joblib>=1.3.0  
 
 ⚡ Quickstart
 
 Clone the repository
-bash
 git clone https://github.com/libta018/Employee-Attrition-Prediction.git
 cd Employee-Attrition-Prediction
 
-Install required packages
-bash
+
+Install dependencies
 pip install -r requirements.txt
 
-Train your own model 
-bash
+
+Train your own model
 python Model_Training.py
 
-Launch the Streamlit dashboard
-bash
+
+Run the Streamlit dashboard
 streamlit run app.py
 
-Try the online demo:
-Live App Demo
+💡 Example Prediction
+| Feature        | Value                                              |
+| -------------- | -------------------------------------------------- |
+| Age            | 28                                                 |
+| Gender         | Male                                               |
+| City           | Bangalore                                          |
+| Education      | Bachelors                                          |
+| Payment Tier   | 2                                                  |
+| Experience     | 2 years                                            |
+| Ever Benched   | Yes                                                |
+| **Prediction** | Likely to Leave (0.69)                             |
+| **Advice**     | Moderate risk. Engage and give feedback to retain. |
 
-
-🏗️  How It Works
-Data Preparation & Feature Engineering:
-Checks and cleans Employee.csv
-Extracts:
-   Years in company
-   Age group, experience level
-Encodes important categorical HR variables
-
-Model Training & Evaluation:
-Trains Random Forest, Logistic Regression, SVM
-Uses stratified train-test splits and cross-validation
-
-Evaluates:
-ROC-AUC scores, confusion matrix
-Displays feature importance
-
-Streamlit Dashboard:
-Takes user input for live predictions
-Shows probability gauge, actionable advice, and downloadable report
-Visualizes all results—risk, probability, supporting factors
-
-Deployment:
-Supports local or online hosting
-Export results in CSV format
-
-📊 Dashboard Screenshot
-<img width="1205" height="747" alt="Screenshot 2025-10-28 131135" src="https://github.com/user-attachments/assets/839d994d-47d3-4a04-bbb1-890b2c1f7dbc" />
-<img width="1117" height="707" alt="Screenshot 2025-10-28 131204" src="https://github.com/user-attachments/assets/2580bd73-734a-4628-8b24-019668dc8d2f" />
-
-💡 Usage Example
-Fill in employee details in the app
-Hit “Predict Attrition Risk”
-Instantly get:
-   Risk score
-   Retention advice
-   Downloadable report
-
-Feature       |  Value                                             
---------------+----------------------------------------------------
-Age           |  28                                                
-Gender        |  Male                                              
-City          |  Bangalore                                         
-Education     |  Bachelors                                         
-Payment Tier  |  2                                                 
-Experience    |  2 years                                           
-Ever Benched  |  Yes                                               
-Prediction    |  Likely to Leave (0.69)                            
-Advice        |  Moderate risk. Engage and give feedback to retain.
 
 🧠 Business Insights Dashboard
-Attrition Rate: Auto-calculated (Sample: ~22%)
-Key Risk Factors: Easily interpreted, e.g. Benched status, Payment tier, experience
-Retention Tips: Appears for moderate/high risk employees
-Model Performance: ROC-AUC, confusion matrix, and feature importance visuals
-
-🛠 Tech Stack
-Python: pandas, numpy, scikit-learn, joblib
-Visualization: matplotlib, seaborn
-App interface: Streamlit
+📈 Attrition Rate: Auto-calculated (Sample: ~22%)
+🔍 Key Risk Factors: Benched status, Payment tier, Experience level
+💬 Retention Tips: Personalized for moderate/high-risk employees
+📊 Model Metrics: ROC-AUC, Confusion Matrix, Feature Importance
 
 📝 License
-MIT License — Use freely for education, research, or commercial apps.
+MIT License — Free to use for education, research, or commercial purposes.
 
-👑 Author
+👨‍💻 Author
 Mohammed Talib
-Questions? Issues? Fork, star, or open an issue!
+📧 Email: mohammedtalib306@gmail.com
+💼 LinkedIn: Connect with me
+🌐 Live Demo: Try it Here
 
 🤝 How to Contribute
-Fork the project and branch off main
-Submit PRs for improvements, bugfixes, or new features
-Share feedback!
+Fork the project & create a feature branch
+Submit PRs for improvements or bug fixes
+⭐ Star the repo if you found it useful
+Share feedback and suggestions!
