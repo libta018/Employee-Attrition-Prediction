@@ -50,8 +50,10 @@ The trained **Random Forest model** processes these inputs and outputs the **att
 
 ## 📸 Screenshots  
 
-![Dashboard Screenshot 1](Screenshot_2025-10-28_131135.png)  
-![Dashboard Screenshot 2](Screenshot_2025-10-28_131204.png)  
+![Dashboard Screenshot 1](<img width="1205" height="747" alt="Screenshot 2025-10-28 131135" src="https://github.com/user-attachments/assets/0846a918-c425-43a2-89ff-bc03ce5f0256" />
+)  
+![Dashboard Screenshot 2](<img width="1117" height="707" alt="Screenshot 2025-10-28 131204" src="https://github.com/user-attachments/assets/df8d26fc-6429-4578-9670-d2df44d1ae35" />
+)  
 
 ---
 
